@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY = "0dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX = "8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark"
+            android:text="手机号:">
+        </TextView>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:hint="请输入手机号">
+        </EditText>
+    </LinearLayout>
+
+    // 密码
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark"
+            android:text="密码:">
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberPassword"
+            android:hint="请输入密码">
+        </EditText>
+    </LinearLayout>
+
+    // 性别
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/nv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="女">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/read_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读书">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/play_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打球">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="听音乐">
+        </CheckBox>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="注册">
+    </Button>
+</LinearLayout>

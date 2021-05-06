@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--不显示Fragment的内容窗口-->
+    <FrameLayout
+        android:id="@+id/fl_main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <!--底部菜单栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+
+        <!--首页菜单-->
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:src="@drawable/tab_home_normal"/>
+
+        <!--分类菜单-->
+        <ImageButton
+            android:id="@+id/ib_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:src="@drawable/tab_category_normal"/>
+
+        <!--购物车菜单-->
+        <ImageButton
+            android:id="@+id/ib_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:src="@drawable/tab_category_normal"/>
+
+        <!--个人中心菜单-->
+        <ImageButton
+            android:id="@+id/ib_personal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:src="@drawable/tab_my_normal"/>
+    </LinearLayout>
+</LinearLayout>

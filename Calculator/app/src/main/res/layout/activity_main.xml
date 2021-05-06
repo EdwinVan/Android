@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    // 上半部分 显示栏
+    <LinearLayout
+        android:id="@+id/display_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        tools:ignore="ExtraText">
+
+        // 显示栏
+        <EditText
+            android:id="@+id/display_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:hint="请输入表达式..."
+            android:textSize="18sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    // 下半部分 数字输入栏
+    <LinearLayout
+        android:id="@+id/number_bar"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        // 第1行
+        <LinearLayout
+            android:id="@+id/first_row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/teal_700"
+                android:text="@string/operator_AC"
+                app:backgroundTint="@color/teal_700" />
+
+            <Button
+                android:id="@+id/operator_DEL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/operator_DEL"
+                app:backgroundTint="@color/teal_700" />
+
+            <Button
+                android:id="@+id/operator_DEL"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/operator_leftParenthesis"
+                app:backgroundTint="@color/teal_700" />
+
+            <Button
+                android:id="@+id/operator_rightParenthesis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/operator_rightParenthesis"
+                app:backgroundTint="@color/teal_700" />
+
+            <Button
+                android:id="@+id/operator_divide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/operator_divide"
+                app:backgroundTint="@color/teal_700" />
+        </LinearLayout>
+
+        // 第2行
+        <LinearLayout
+            android:id="@+id/second_row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_9" />
+            <Button
+                android:id="@+id/num8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_8" />
+            <Button
+                android:id="@+id/num7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_7" />
+
+            <Button
+                android:id="@+id/operator_multiplication"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/operator_multiplication"
+                app:backgroundTint="@color/teal_700" />
+
+        </LinearLayout>
+
+        // 第3行
+        <LinearLayout
+            android:id="@+id/third_row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_6" />
+            <Button
+                android:id="@+id/num2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_5" />
+            <Button
+                android:id="@+id/num4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_4" />
+
+            <Button
+                android:id="@+id/operator_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="@string/operator_add"
+                app:backgroundTint="@color/teal_700" />
+
+        </LinearLayout>
+
+        // 第4行
+        <LinearLayout
+            android:id="@+id/fourth_row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_1" />
+            <Button
+                android:id="@+id/num2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_2" />
+            <Button
+                android:id="@+id/num3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/num_3" />
+
+            <Button
+                android:id="@+id/operator_minus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/operator_minus"
+                app:backgroundTint="@color/teal_700" />
+
+        </LinearLayout>
+
+        // 第5行
+        <LinearLayout
+            android:id="@+id/fifth_row"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/num0"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:text="@string/num_0" />
+
+            <Button
+                android:id="@+id/point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/point"
+                app:backgroundTint="@color/purple_500" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/equal"
+                app:backgroundTint="#F44336" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
