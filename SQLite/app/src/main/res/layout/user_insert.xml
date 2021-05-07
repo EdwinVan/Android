@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/insert_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/edit_shape"
+        android:layout_marginTop="10dp"
+        android:hint="请输入用户名">
+
+    </EditText>
+    <EditText
+        android:id="@+id/insert_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:background="@drawable/edit_shape"
+        android:layout_marginTop="10dp"
+        android:hint="请输入密码">
+
+    </EditText>
+    <Spinner
+        android:id="@+id/insert_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:entries="@array/sex" >
+
+    </Spinner>
+    <EditText
+        android:id="@+id/insert_age"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/edit_shape"
+        android:hint="请输入年纪">
+
+    </EditText>
+    <Button
+        android:id="@+id/save_usermes"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="#4169E1"
+        android:text="添加该用户信息"
+        android:layout_height="50dp" >
+
+    </Button>
+
+</LinearLayout>
